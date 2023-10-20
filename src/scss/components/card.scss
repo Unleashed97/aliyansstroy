@@ -101,22 +101,36 @@
             }
         }
 
-        // .card__link {
-        //     font-weight: 700;
-        //     color: $colors-beige;
-
-        //     transition: 0.3s linear;
-
-        //     &:hover {
-        //         color: $colors-blue;
-        //     }
-        // }
-
         .card__btn {
             width: 100%;
             max-width: 223px;
 
             margin: 0 auto;
+        }
+    }
+
+    &--partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        .card__image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
+            height: 111px;
+            padding: 10px;
+
+            background-color: #f7fafd;
+        }
+
+        .card__image {
+            display: block;
+            max-width: 100%;
+            height: auto;
         }
     }
 }

@@ -109,4 +109,23 @@
             }
         }
     }
+
+    &--partners {
+        .section__inner {
+            padding: 51px 0 30px;
+        }
+
+        .section__title {
+            margin-bottom: 59px;
+        }
+
+        .slider__title {
+            margin-bottom: 28px;
+
+            font-family: $family-title;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
 }

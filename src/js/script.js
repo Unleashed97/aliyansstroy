@@ -7,7 +7,6 @@ customFunctions.handleTabs()
 
 // vendors
 const swiperProjects = new Swiper('.swiper--projects', {
-    // Optional parameters
     direction: 'horizontal',
     loop: true,
 
@@ -27,9 +26,58 @@ const swiperProjects = new Swiper('.swiper--projects', {
         },
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next--projects',
         prevEl: '.swiper-button-prev--projects',
+    },
+})
+const swiperPartnersBuild = new Swiper('.swiper--partners-build', {
+    direction: 'horizontal',
+    loop: true,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next--partners-build',
+        prevEl: '.swiper-button-prev--partners-build',
+    },
+})
+const swiperPartnersBank = new Swiper('.swiper--partners-bank', {
+    direction: 'horizontal',
+    loop: true,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next--partners-bank',
+        prevEl: '.swiper-button-prev--partners-bank',
     },
 })
