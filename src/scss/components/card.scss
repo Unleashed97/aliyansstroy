@@ -1,0 +1,122 @@
+.card {
+    &--project {
+        max-width: 467px;
+
+        border-radius: 0 0 23px 23px;
+        box-shadow: -1px 1px 5px rgba($colors-blue, 0.5);
+
+        overflow: hidden;
+
+        .card__image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card__content {
+            padding: 22px 30px;
+
+            background-color: #fff;
+        }
+
+        .card__title {
+            margin-bottom: 21px;
+
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $colors-blue;
+        }
+
+        .general-stats {
+            margin-bottom: 22px;
+
+            div {
+                display: flex;
+                align-items: flex-end;
+                gap: 5px;
+
+                margin-bottom: 10px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            dt {
+                font-size: 1.4rem;
+            }
+
+            dd {
+                margin: 0;
+
+                font-size: 2.4rem;
+                font-weight: 700;
+                line-height: 0.9;
+                color: $colors-blue;
+            }
+        }
+
+        .house-stats-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            margin-bottom: 40px;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+
+                color: $colors-blue;
+
+                .num {
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .card__price-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+
+            margin-bottom: 20px;
+
+            div {
+                display: flex;
+                align-items: flex-end;
+                gap: 5px;
+            }
+            dd {
+                margin: 0;
+
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 1;
+                color: $colors-blue;
+            }
+        }
+
+        .card__link {
+            font-weight: 700;
+            color: $colors-beige;
+
+            transition: 0.3s linear;
+
+            &:hover {
+                color: $colors-blue;
+            }
+        }
+
+        .card__btn {
+            width: 100%;
+            max-width: 223px;
+
+            margin: 0 auto;
+        }
+    }
+}
