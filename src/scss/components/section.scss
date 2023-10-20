@@ -15,6 +15,17 @@
     &__content {
     }
 
+    a {
+        font-weight: 700;
+        color: $colors-beige;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            color: $colors-blue;
+        }
+    }
+
     &--showcase {
         min-height: 724px;
 
@@ -44,10 +55,58 @@
     }
 
     &--projects {
+        margin-bottom: 30px;
+
         .section__title {
             margin-bottom: 61px;
         }
         .section__content {
+        }
+    }
+
+    &--about {
+        position: relative;
+        padding: 72px 0 48px;
+
+        margin-bottom: 55px;
+
+        background-image: url('../img/section/about/about-bg.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .decor {
+            position: absolute;
+
+            &--gulls {
+                right: 0;
+                top: 85px;
+            }
+            &--leaves {
+                right: 10px;
+                bottom: 20px;
+            }
+
+            &--house {
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+
+        .section__title {
+            margin-bottom: 55px;
+        }
+
+        .section__content {
+            max-width: 600px;
+            margin-left: auto;
+
+            p {
+                margin-bottom: 35px;
+
+                line-height: 1.8rem;
+            }
         }
     }
 }

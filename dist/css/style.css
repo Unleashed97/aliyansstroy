@@ -1404,6 +1404,14 @@ p {
   color: #0f1b50;
   text-align: center;
 }
+.section a {
+  font-weight: 700;
+  color: #ac7f42;
+  transition: 0.3s linear;
+}
+.section a:hover {
+  color: #0f1b50;
+}
 .section--showcase {
   min-height: 724px;
   background-image: url("../img/section/showcase/showcase-bg.webp");
@@ -1425,9 +1433,49 @@ p {
   margin-bottom: 26px;
   text-align: left;
 }
+.section--projects {
+  margin-bottom: 30px;
+}
 .section--projects .section__title {
   margin-bottom: 61px;
 }
+.section--about {
+  position: relative;
+  padding: 72px 0 48px;
+  margin-bottom: 55px;
+  background-image: url("../img/section/about/about-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section--about .decor {
+  position: absolute;
+}
+.section--about .decor--gulls {
+  right: 0;
+  top: 85px;
+}
+.section--about .decor--leaves {
+  right: 10px;
+  bottom: 20px;
+}
+.section--about .decor--house {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.section--about .section__title {
+  margin-bottom: 55px;
+}
+.section--about .section__content {
+  max-width: 600px;
+  margin-left: auto;
+}
+.section--about .section__content p {
+  margin-bottom: 35px;
+  line-height: 1.8rem;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -1627,14 +1675,6 @@ p {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1;
-  color: #0f1b50;
-}
-.card--project .card__link {
-  font-weight: 700;
-  color: #ac7f42;
-  transition: 0.3s linear;
-}
-.card--project .card__link:hover {
   color: #0f1b50;
 }
 .card--project .card__btn {
