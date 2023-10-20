@@ -5,12 +5,16 @@
     right: 0;
     z-index: 10;
 
+    background-color: rgba(#fff, 0.75);
+
+    box-shadow: 0 3px 8px rgba(#000, 0.12);
+
     &__inner {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
 
-        padding: 15px 0;
+        height: 40px;
 
         &.active {
             position: absolute;

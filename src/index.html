@@ -5,29 +5,168 @@
 
     <body>
         <div class="wrapper">
-            <!-- modal include -->
-            @@include('html/partials/modal.html')
+            <div class="container container--lg">
+                <!-- modal include -->
+                @@include('html/partials/modal.html')
 
-            <!-- header include -->
-            @@include('html/partials/header.html')
+                <!-- header include -->
+                @@include('html/partials/header.html')
 
-            <!-- main -->
-            <main>
-                <!-- section -->
-                <section class="section">
-                    <div class="container">
-                        <div class="section__inner">
-                            <h2 class="section__title">
-                                строительство дома под ключ по выгодной цене
-                            </h2>
-                            <div class="section__content">content</div>
+                <!-- main -->
+                <main>
+                    <!-- section -->
+                    <section class="section section--showcase">
+                        <div class="container">
+                            <div class="section__inner">
+                                <header class="section__header">
+                                    <a href="index.html" class="logo">
+                                        <picture>
+                                            <source
+                                                srcset="img/logo/logo.webp"
+                                            />
+                                            <img
+                                                src="img/logo/logo.png"
+                                                alt="logo__image"
+                                            />
+                                        </picture>
+                                    </a>
+
+                                    <div class="tel-block">
+                                        <div class="tel-block__item sm">
+                                            <span class="tel-block__item-top">
+                                                <img
+                                                    src="img/icons/tel.png"
+                                                    alt=""
+                                                />
+                                                Заказать звонок
+                                            </span>
+                                            <span
+                                                class="tel-block__item-bottom"
+                                            >
+                                                Перевоним через 15 минут
+                                            </span>
+                                        </div>
+                                        <div class="tel-block__item big">
+                                            <span class="tel-block__item-top">
+                                                <img
+                                                    src="img/icons/tel.png"
+                                                    alt=""
+                                                />
+                                                <a href="tel:+79211234567">
+                                                    +7 (921) 123-45-67
+                                                </a>
+                                            </span>
+                                            <span
+                                                class="tel-block__item-bottom"
+                                            >
+                                                Ежедневно с 9.00 до 22.00
+                                            </span>
+                                        </div>
+                                    </div>
+                                </header>
+                                <h2 class="section__title">
+                                    строительство дома <br />
+                                    под ключ по выгодной цене
+                                </h2>
+                                <div class="section__content">
+                                    <ul class="showcase-list">
+                                        <li class="showcase-list__item">
+                                            <img
+                                                src="img/section/showcase/home.png"
+                                                alt="дом"
+                                                class="showcase-list__item-image"
+                                            />
+                                            <span
+                                                class="showcase-list__item-text"
+                                            >
+                                                Свой дом по цене квартиры
+                                            </span>
+                                        </li>
+                                        <li class="showcase-list__item">
+                                            <img
+                                                src="img/section/showcase/warranty.png"
+                                                alt="дом"
+                                                class="showcase-list__item-image"
+                                            />
+                                            <span
+                                                class="showcase-list__item-text"
+                                            >
+                                                Гарантия на все услуги
+                                            </span>
+                                        </li>
+                                        <li class="showcase-list__item">
+                                            <img
+                                                src="img/section/showcase/libra.png"
+                                                alt="дом"
+                                                class="showcase-list__item-image"
+                                            />
+                                            <span
+                                                class="showcase-list__item-text"
+                                            >
+                                                Юридическое сопровождение
+                                            </span>
+                                        </li>
+                                        <li class="showcase-list__item">
+                                            <img
+                                                src="img/section/showcase/plan.png"
+                                                alt="дом"
+                                                class="showcase-list__item-image"
+                                            />
+                                            <span
+                                                class="showcase-list__item-text"
+                                            >
+                                                Дизайн-проект дома в подарок
+                                            </span>
+                                        </li>
+                                    </ul>
+
+                                    <form class="form form--showcase">
+                                        <header class="form__header">
+                                            <h3 class="form__title">
+                                                ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
+                                            </h3>
+                                            <p class="form__text">
+                                                заполните поля формы и получите
+                                                консультацию абсолютно бесплатно
+                                            </p>
+                                        </header>
+
+                                        <div class="form__group">
+                                            <input
+                                                type="text"
+                                                class="form__input"
+                                                placeholder="Ваше имя"
+                                                required
+                                            />
+                                            <input
+                                                type="tel"
+                                                class="form__input"
+                                                placeholder="Ваше телефон"
+                                                required
+                                            />
+                                            <button
+                                                type="submit"
+                                                class="btn form__submit"
+                                            >
+                                                Хочу консультацию
+                                            </button>
+                                        </div>
+
+                                        <footer class="form__footer">
+                                            Мы перезвоним Вам в течение 15 минут
+                                            по указанному номеру в рабочее время
+                                            пн-пт с 9.00 до 22.00
+                                        </footer>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <!-- end of section -->
-            </main>
-            <!-- footer include -->
-            @@include('html/partials/footer.html')
+                    </section>
+                    <!-- end of section -->
+                </main>
+                <!-- footer include -->
+                @@include('html/partials/footer.html')
+            </div>
         </div>
     </body>
 </html>

@@ -1,0 +1,21 @@
+.showcase-list {
+    max-width: 440px;
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 85px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__item-text {
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2rem;
+        color: $colors-beige;
+    }
+}

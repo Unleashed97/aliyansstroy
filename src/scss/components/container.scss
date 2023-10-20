@@ -1,5 +1,10 @@
 .container {
-    max-width: 1230px;
+    width: 100%;
+    max-width: 1052px;
     padding: 0 15px;
     margin: 0 auto;
+
+    &--lg {
+        max-width: 1470px;
+    }
 }

@@ -1,0 +1,52 @@
+.tel-block {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &__item {
+        height: 55px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+
+        color: $colors-beige;
+
+        cursor: pointer;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            color: $colors-blue;
+        }
+
+        &.sm {
+            // width: 100%;
+            // max-width: 240px;
+            width: 240px;
+
+            background-image: url('../img/section/showcase/tel-cover-sm.webp');
+            background-size: cover;
+        }
+        &.big {
+            max-width: 400px;
+            width: 100%;
+
+            background-image: url('../img/section/showcase/tel-cover-big.webp');
+            background-size: cover;
+        }
+    }
+
+    &__item-top {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    &__item-bottom {
+        font-size: 1.2rem;
+    }
+}

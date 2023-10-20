@@ -22,7 +22,8 @@ html {
 
 body {
     font-family: $family;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    color: $colors-grey;
 }
 
 ul {
@@ -47,6 +48,7 @@ p {
 }
 
 // components
+@import 'components/btn.scss';
 @import 'components/header.scss';
 @import 'components/footer.scss';
 @import 'components/container.scss';
@@ -57,3 +59,5 @@ p {
 @import 'components/tabs.scss';
 @import 'components/section.scss';
 @import 'components/form.scss';
+@import 'components/tel-block.scss';
+@import 'components/showcase-list.scss';
