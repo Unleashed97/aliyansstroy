@@ -1,0 +1,32 @@
+.nav {
+    &--header {
+        @media (max-width: $md) {
+            display: none;
+        }
+
+        .nav__list {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav__item {
+        }
+
+        .nav__link {
+            font-size: 1.4rem;
+        }
+    }
+
+    &--footer {
+        .nav__list {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+    }
+}

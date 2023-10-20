@@ -1,0 +1,44 @@
+/* myriad pro -regular - latin-cyr*/
+@font-face {
+    font-display: swap;
+    font-family: 'MyriadPro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/myriad-pro/MyriadPro-Regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* myriad pro - it - latin-cyr */
+@font-face {
+    font-display: swap;
+    font-family: 'MyriadPro';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/myriad-pro/MyriadPro-It.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* myriad pro - semibold  - latin-cyr */
+@font-face {
+    font-display: swap;
+    font-family: 'MyriadPro';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/myriad-pro/MyriadPro-Semibold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* myriad pro - bold - latin-cyr */
+@font-face {
+    font-display: swap;
+    font-family: 'MyriadPro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/myriad-pro/MyriadPro-Bold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Intro bold - regular -  latin-cyr */
+@font-face {
+    font-display: swap;
+    font-family: 'Intro Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/intro-bold/intro_bold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

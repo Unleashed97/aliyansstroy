@@ -1,0 +1,55 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 15px 0;
+
+        &.active {
+            position: absolute;
+            inset: 0;
+            z-index: 5;
+
+            width: 100%;
+            min-height: 100vh;
+
+            padding-top: 100px;
+
+            display: flex;
+            flex-direction: column;
+
+            background-color: #fff;
+
+            .header__logo {
+                position: absolute;
+                left: 15px;
+                top: 15px;
+                z-index: 10;
+            }
+
+            .burger {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                z-index: 10;
+            }
+
+            .nav--header {
+                display: block;
+
+                .nav__list {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
