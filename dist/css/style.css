@@ -1523,6 +1523,23 @@ p {
   justify-content: center;
   gap: 30px;
 }
+.section--structure {
+  margin-bottom: 53px;
+}
+.section--structure .section__title {
+  margin-bottom: 71px;
+}
+.section--structure .section__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 285px));
+  gap: 80px 40px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .section--structure .section__content {
+    justify-content: center;
+  }
+}
 
 .form {
   display: flex;
@@ -1857,6 +1874,33 @@ p {
 .card--advantage .card__text {
   line-height: 1.8rem;
   text-align: center;
+}
+.card--structure {
+  max-width: 290px;
+}
+.card--structure .card__top {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  margin-bottom: 26px;
+}
+.card--structure .card__num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-family: "Intro Bold", sans-serif;
+  font-size: 4.1rem;
+  color: #0f1b50;
+  border-radius: 50%;
+  background-color: #ac7f42;
+}
+.card--structure .card__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  color: #0f1b50;
 }
 
 .swiper {

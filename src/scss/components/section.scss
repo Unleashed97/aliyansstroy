@@ -174,4 +174,23 @@
             gap: 30px;
         }
     }
+
+    &--structure {
+        margin-bottom: 53px;
+
+        .section__title {
+            margin-bottom: 71px;
+        }
+
+        .section__content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 285px));
+            gap: 80px 40px;
+            justify-content: space-between;
+
+            @media (max-width: $md) {
+                justify-content: center;
+            }
+        }
+    }
 }
