@@ -81,3 +81,28 @@ const swiperPartnersBank = new Swiper('.swiper--partners-bank', {
         prevEl: '.swiper-button-prev--partners-bank',
     },
 })
+const swiperCert = new Swiper('.swiper--cert', {
+    direction: 'horizontal',
+    loop: true,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+        },
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next--cert',
+        prevEl: '.swiper-button-prev--cert',
+    },
+})

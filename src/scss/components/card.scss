@@ -133,4 +133,36 @@
             height: auto;
         }
     }
+
+    &--cert {
+        padding: 14px;
+
+        background-color: #fff;
+        border-radius: 19px;
+        box-shadow: -1px 1px 5px rgba($colors-blue, 0.5);
+
+        .card__image-wrapper {
+            margin-bottom: 13px;
+
+            border: 1px solid #e8e4e4;
+        }
+
+        .card__image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card__text {
+            margin-bottom: 3px;
+
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            text-align: center;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
 }

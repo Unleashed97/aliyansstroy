@@ -128,4 +128,19 @@
             text-align: center;
         }
     }
+
+    &--certificates {
+        padding: 63px 0 116px;
+
+        margin-bottom: 40px;
+
+        background-image: url('../img/section/certificates/cert-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .section__title {
+            margin-bottom: 55px;
+        }
+    }
 }

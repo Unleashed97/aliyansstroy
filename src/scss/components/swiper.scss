@@ -1,40 +1,14 @@
 .swiper {
-    &--projects {
-        padding: 5px;
-    }
+    padding: 5px;
 }
 
 .slider-container {
-    &--projects {
-        position: relative;
+    position: relative;
 
-        .swiper-button-prev {
-            left: -50px;
-        }
-        .swiper-button-next {
-            right: -50px;
-        }
+    .swiper-button-prev {
+        left: -50px;
     }
-    &--partners-build {
-        position: relative;
-
-        margin-bottom: 40px;
-
-        .swiper-button-prev {
-            left: -50px;
-        }
-        .swiper-button-next {
-            right: -50px;
-        }
-    }
-    &--partners-bank {
-        position: relative;
-
-        .swiper-button-prev {
-            left: -50px;
-        }
-        .swiper-button-next {
-            right: -50px;
-        }
+    .swiper-button-next {
+        right: -50px;
     }
 }
