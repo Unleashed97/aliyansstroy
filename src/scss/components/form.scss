@@ -6,6 +6,7 @@
     &__group {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 15px;
     }
 
@@ -25,7 +26,8 @@
 
         &::placeholder {
             font-family: $family;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
+            color: $colors-grey;
         }
     }
 
@@ -35,6 +37,57 @@
 
         border: 0;
         background-color: #ccc;
+    }
+
+    &__warning {
+        max-width: 200px;
+
+        font-size: 1.2rem;
+        font-style: italic;
+        line-height: 2rem;
+    }
+
+    .file {
+        width: 100%;
+
+        &__label {
+            position: relative;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        &__input {
+            position: absolute;
+            width: 0;
+            height: 0;
+            font-size: 0;
+
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        &__field {
+            width: calc(50% - 15px / 2);
+            height: 46px;
+
+            padding: 13px 16px;
+
+            font-family: $family;
+            font-size: 1.4rem;
+
+            border: 1px solid $colors-beige;
+            border-radius: 5px;
+
+            background-color: #fff;
+        }
+        &__btn {
+            width: calc(50% - 15px / 2);
+            height: 46px;
+        }
     }
 
     &--showcase {
@@ -76,6 +129,31 @@
             height: 46px;
 
             max-width: 244px;
+        }
+    }
+
+    &--calc {
+        width: 100%;
+        max-width: 438px;
+
+        .form__title {
+            margin-bottom: 7px;
+
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $colors-blue;
+        }
+
+        .form__text {
+            margin-bottom: 24px;
+
+            line-height: 1.8rem;
+        }
+
+        .form__submit {
+            width: calc(50% - 15px / 2);
+            padding: 16px 0;
         }
     }
 }

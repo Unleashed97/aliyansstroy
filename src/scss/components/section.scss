@@ -143,4 +143,35 @@
             margin-bottom: 55px;
         }
     }
+
+    &--advantages {
+        position: relative;
+
+        .leaves {
+            position: absolute;
+
+            left: 0;
+            bottom: 0;
+        }
+        .tree {
+            position: absolute;
+
+            right: 0;
+            bottom: 0;
+        }
+        .section__title {
+            margin-bottom: 51px;
+        }
+
+        .advantages-list {
+            width: 100%;
+            margin-bottom: 53px;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+
+            gap: 30px;
+        }
+    }
 }

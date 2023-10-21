@@ -135,6 +135,7 @@
     }
 
     &--cert {
+        max-width: 310px;
         padding: 14px;
 
         background-color: #fff;
@@ -163,6 +164,36 @@
             &:last-of-type {
                 margin-bottom: 0;
             }
+        }
+    }
+
+    &--advantage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card__image {
+            margin-bottom: 20px;
+
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card__title {
+            margin-bottom: 20px;
+
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 2.2rem;
+            color: $colors-blue;
+            text-align: center;
+        }
+
+        .card__text {
+            line-height: 1.8rem;
+
+            text-align: center;
         }
     }
 }

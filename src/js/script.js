@@ -95,7 +95,7 @@ const swiperCert = new Swiper('.swiper--cert', {
             slidesPerView: 2,
             spaceBetween: 40,
         },
-        1200: {
+        992: {
             slidesPerView: 3,
             spaceBetween: 60,
         },
