@@ -1550,6 +1550,12 @@ p {
 .section--testimonials .section__title {
   margin-bottom: 52px;
 }
+.section--contacts .section__content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -1958,4 +1964,36 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.contacts {
+  min-width: 320px;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-style: normal;
+}
+.contacts ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 53px;
+}
+.contacts ul li {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.contacts ul li a {
+  color: #4b4c4f;
+  font-weight: 400;
+  transition: 0.3s linear;
+}
+.contacts ul li a:hover {
+  color: #0f1b50;
+}
+.contacts__btn {
+  width: 100%;
+  max-width: 314px;
+  padding: 16px;
+  font-size: 1.6rem;
 }

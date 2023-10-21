@@ -1,0 +1,41 @@
+.contacts {
+    min-width: 320px;
+
+    font-size: 1.8rem;
+    line-height: 3rem;
+
+    font-style: normal;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        margin-bottom: 53px;
+    }
+
+    ul li {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    ul li a {
+        color: $colors-grey;
+        font-weight: 400;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            color: $colors-blue;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        max-width: 314px;
+
+        padding: 16px;
+        font-size: 1.6rem;
+    }
+}

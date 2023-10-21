@@ -209,4 +209,12 @@
         .section__content {
         }
     }
+
+    &--contacts {
+        .section__content {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+        }
+    }
 }
