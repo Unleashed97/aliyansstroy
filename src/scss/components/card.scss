@@ -231,4 +231,33 @@
             color: $colors-blue;
         }
     }
+
+    &--testimonial {
+        max-width: 350px;
+
+        padding: 27px 24px 18px;
+
+        border-radius: 19px;
+        box-shadow: -1px 1px 5px rgba($colors-blue, 0.5);
+        background-color: #fff;
+
+        .card__author {
+            display: block;
+            margin-bottom: 25px;
+
+            font-weight: 600;
+        }
+
+        .card__text {
+            margin-bottom: 60px;
+        }
+
+        .card__footer {
+            padding-top: 10px;
+
+            font-size: 1.6rem;
+
+            border-top: 1px solid;
+        }
+    }
 }

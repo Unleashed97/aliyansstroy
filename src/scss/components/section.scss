@@ -193,4 +193,20 @@
             }
         }
     }
+
+    &--testimonials {
+        padding: 65px 0 110px;
+
+        background-image: url('../img/section/testimonials/test-bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .section__title {
+            margin-bottom: 52px;
+        }
+
+        .section__content {
+        }
+    }
 }

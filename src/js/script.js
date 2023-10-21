@@ -106,3 +106,28 @@ const swiperCert = new Swiper('.swiper--cert', {
         prevEl: '.swiper-button-prev--cert',
     },
 })
+const swipertestimonials = new Swiper('.swiper--testimonials', {
+    direction: 'horizontal',
+    loop: true,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+        },
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next--testimonials',
+        prevEl: '.swiper-button-prev--testimonials',
+    },
+})
