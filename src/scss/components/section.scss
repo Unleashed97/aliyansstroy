@@ -346,5 +346,38 @@
         @media (max-width: $sm) {
             padding-top: 170px;
         }
+
+        figure {
+            max-width: 310px;
+            padding: 14px;
+
+            background-color: #fff;
+            border-radius: 19px;
+            box-shadow: -1px 1px 5px rgba($colors-blue, 0.5);
+
+            &:nth-of-type(odd) {
+                float: right;
+                margin-left: 20px;
+            }
+
+            &:nth-of-type(even) {
+                float: left;
+                margin-right: 20px;
+            }
+
+            img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+
+                margin-bottom: 12px;
+            }
+
+            figcaption {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                text-align: center;
+            }
+        }
     }
 }

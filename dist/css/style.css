@@ -1779,6 +1779,32 @@ p {
     padding-top: 170px;
   }
 }
+.section--default figure {
+  max-width: 310px;
+  padding: 14px;
+  background-color: #fff;
+  border-radius: 19px;
+  box-shadow: -1px 1px 5px rgba(15, 27, 80, 0.5);
+}
+.section--default figure:nth-of-type(odd) {
+  float: right;
+  margin-left: 20px;
+}
+.section--default figure:nth-of-type(even) {
+  float: left;
+  margin-right: 20px;
+}
+.section--default figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+.section--default figure figcaption {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
 
 .form {
   display: flex;
