@@ -1,0 +1,64 @@
+.socials {
+    padding: 13px 12px;
+
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    box-shadow: -1px 1px 5px rgba($colors-blue, 0.5);
+    background-color: #fff;
+    border-radius: 9px 0 0 9px;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--showcase {
+        position: absolute;
+        right: 0;
+        top: 40%;
+
+        transform: translateY(-50%);
+
+        @media (max-width: 380px) {
+            display: none;
+        }
+    }
+
+    &--contacts {
+        position: absolute;
+        right: 0;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        @media (max-width: $xl) {
+            display: none;
+        }
+    }
+    &--contacts-static {
+        display: none;
+        flex-direction: row;
+
+        margin-bottom: 20px;
+
+        border-radius: 9px;
+
+        a {
+            display: block;
+        }
+
+        @media (max-width: $xl) {
+            display: flex;
+        }
+    }
+}

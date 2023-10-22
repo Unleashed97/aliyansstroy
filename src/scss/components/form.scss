@@ -95,17 +95,20 @@
         flex-direction: column;
         gap: 31px;
 
-        padding: 23px 0;
+        padding: 30px;
 
         background-image: url('../img/section/showcase/form-bg.webp');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: left 0;
 
         .form__header {
             display: flex;
             align-items: center;
             gap: 15px;
+            @media (max-width: $sm) {
+                flex-direction: column;
+            }
         }
 
         .form__title {
@@ -120,8 +123,20 @@
             color: $colors-blue;
         }
 
+        .form__group {
+            justify-content: flex-start;
+
+            @media (max-width: $sm) {
+                flex-direction: column;
+            }
+        }
+
         .form__input {
             max-width: 209px;
+
+            @media (max-width: $sm) {
+                max-width: 100%;
+            }
         }
 
         .form__submit {
@@ -129,10 +144,17 @@
             height: 46px;
 
             max-width: 244px;
+
+            @media (max-width: $sm) {
+                max-width: 100%;
+            }
         }
     }
 
     &--calc {
+        position: relative;
+        z-index: 1;
+
         width: 100%;
         max-width: 438px;
 
@@ -151,9 +173,29 @@
             line-height: 1.8rem;
         }
 
+        .form__group--submit {
+            @media (max-width: $sm) {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .form__warning {
+                @media (max-width: $sm) {
+                    max-width: 100%;
+
+                    order: 2;
+                }
+            }
+        }
+
         .form__submit {
             width: calc(50% - 15px / 2);
             padding: 16px 0;
+
+            @media (max-width: $sm) {
+                order: 1;
+                width: 100%;
+            }
         }
     }
 }

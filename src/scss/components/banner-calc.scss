@@ -1,8 +1,13 @@
 .banner-calc {
     padding: 75px 0;
 
-    background-image: url('../img/section/advantages/form-calc.webp');
-    background-repeat: no-repeat;
+    background-image: url('../img/section/advantages/form-calc-bg.webp');
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+
+    @media (max-width: $lg) {
+        background-size: cover;
+    }
 }

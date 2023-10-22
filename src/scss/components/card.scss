@@ -17,6 +17,9 @@
             padding: 22px 30px;
 
             background-color: #fff;
+            @media (max-width: $sm) {
+                padding: 15px 10px;
+            }
         }
 
         .card__title {
@@ -63,6 +66,11 @@
 
             margin-bottom: 40px;
 
+            @media (max-width: $sm) {
+                grid-template-columns: repeat(2, auto);
+                gap: 30px;
+            }
+
             li {
                 display: flex;
                 flex-direction: column;
@@ -85,6 +93,10 @@
             gap: 10px;
 
             margin-bottom: 20px;
+
+            @media (max-width: $sm) {
+                flex-direction: column;
+            }
 
             div {
                 display: flex;

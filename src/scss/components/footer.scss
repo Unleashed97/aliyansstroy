@@ -30,6 +30,10 @@
         margin-bottom: 15px;
 
         text-align: center;
+
+        @media (max-width: $sm) {
+            margin-bottom: 20px;
+        }
     }
 
     &__docs {
@@ -37,6 +41,11 @@
         align-items: center;
         justify-content: center;
         gap: 35px;
+
+        @media (max-width: $sm) {
+            flex-direction: column;
+            gap: 20px;
+        }
 
         a {
             &:hover {
