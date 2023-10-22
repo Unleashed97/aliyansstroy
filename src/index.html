@@ -48,50 +48,6 @@
 
                     <div class="container">
                         <div class="section__inner">
-                            <header class="section__header">
-                                <a href="index.html" class="logo">
-                                    <picture>
-                                        <source srcset="img/logo/logo.webp" />
-                                        <img
-                                            src="img/logo/logo.png"
-                                            alt="logo__image"
-                                        />
-                                    </picture>
-                                </a>
-
-                                <div class="tel-block">
-                                    <button
-                                        type="button"
-                                        class="tel-block__item sm"
-                                    >
-                                        <span class="tel-block__item-top">
-                                            <img
-                                                src="img/icons/tel.png"
-                                                alt=""
-                                            />
-                                            Заказать звонок
-                                        </span>
-                                        <span class="tel-block__item-bottom">
-                                            Перевоним через 15 минут
-                                        </span>
-                                    </button>
-                                    <a
-                                        href="tel:+79211234567"
-                                        class="tel-block__item big"
-                                    >
-                                        <span class="tel-block__item-top">
-                                            <img
-                                                src="img/icons/tel.png"
-                                                alt=""
-                                            />
-                                            +7 (921) 123-45-67
-                                        </span>
-                                        <span class="tel-block__item-bottom">
-                                            Ежедневно с 9.00 до 22.00
-                                        </span>
-                                    </a>
-                                </div>
-                            </header>
                             <h2 class="section__title">
                                 строительство дома <br />
                                 под ключ по выгодной цене
@@ -336,7 +292,8 @@
 
                                                         <button
                                                             type="button"
-                                                            class="btn card__btn"
+                                                            class="btn card__btn modal-open-btn"
+                                                            data-target="modal"
                                                         >
                                                             Хочу консультацию
                                                         </button>
@@ -471,7 +428,8 @@
 
                                                         <button
                                                             type="button"
-                                                            class="btn card__btn"
+                                                            class="btn card__btn modal-open-btn"
+                                                            data-target="modal"
                                                         >
                                                             Хочу консультацию
                                                         </button>
@@ -1415,129 +1373,6 @@
                     </div>
                 </section>
                 <!-- end of section testimonials -->
-
-                <!-- section contacts -->
-                <section class="section section--contacts">
-                    <ul class="socials socials--contacts">
-                        <li class="socials__item">
-                            <a href="#">
-                                <img
-                                    src="img/icons/whatsapp.png"
-                                    alt=""
-                                    class="socials__icon"
-                                />
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#">
-                                <img
-                                    src="img/icons/vk.png"
-                                    alt=""
-                                    class="socials__icon"
-                                />
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#">
-                                <img
-                                    src="img/icons/tg.png"
-                                    alt=""
-                                    class="socials__icon"
-                                />
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="container">
-                        <div class="section__inner">
-                            <h2 class="section__title">Контакты</h2>
-
-                            <div class="section__content">
-                                <address class="contacts">
-                                    <ul
-                                        class="socials socials--contacts-static"
-                                    >
-                                        <li class="socials__item">
-                                            <a href="#">
-                                                <img
-                                                    src="img/icons/whatsapp.png"
-                                                    alt=""
-                                                    class="socials__icon"
-                                                />
-                                            </a>
-                                        </li>
-                                        <li class="socials__item">
-                                            <a href="#">
-                                                <img
-                                                    src="img/icons/vk.png"
-                                                    alt=""
-                                                    class="socials__icon"
-                                                />
-                                            </a>
-                                        </li>
-                                        <li class="socials__item">
-                                            <a href="#">
-                                                <img
-                                                    src="img/icons/tg.png"
-                                                    alt=""
-                                                    class="socials__icon"
-                                                />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <ul class="contacts__list">
-                                        <li>
-                                            <img
-                                                src="img/section/contacts/tel.png"
-                                                alt=""
-                                            />
-
-                                            <a href="tel:+79211234567">
-                                                +7 (921) 123-45-67
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <img
-                                                src="img/section/contacts/mail.png"
-                                                alt=""
-                                            />
-
-                                            <a href="mailto:office@alstroy.ru">
-                                                office@alstroy.ru
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <img
-                                                src="img/section/contacts/home.png"
-                                                alt=""
-                                            />
-
-                                            <p>
-                                                Санкт-Петербург, ул. Ваш адрес,
-                                                дом №
-                                            </p>
-                                        </li>
-                                    </ul>
-
-                                    <button
-                                        type="button"
-                                        class="btn contacts__btn"
-                                    >
-                                        Хочу консультацию
-                                    </button>
-                                </address>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map-wrapper">
-                        <script
-                            type="text/javascript"
-                            charset="utf-8"
-                            async
-                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A10fe66b213b5c6ec37a72c6f9f399219d5edbeeedeae76320f743c5d7bd8cbfc&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=false"
-                        ></script>
-                    </div>
-                </section>
-                <!-- end of section contacts -->
             </main>
             <!-- footer include -->
             @@include('html/partials/footer.html')

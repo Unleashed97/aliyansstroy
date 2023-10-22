@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <!-- head include -->
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <script defer src="js/vendor/swiper-bundle.min.js"></script>
+    <script defer src="js/script.min.js"></script>
+    <title>Проект</title>
+</head>
+    <body>
+        <div class="wrapper">
+            <!-- <div class="container container--lg"> -->
+            <!-- modal include -->
+            <div class="modal">
+    <div class="modal__inner">
+        <button class="modal__close">
+            <img src="img/icons/close.svg" alt="закрыть" />
+        </button>
+        <div class="modal__content">
+            <form class="form form--calc">
+                <h4 class="form__title">РассчитаЙТЕ стоимость СВОЕГО ДОМА:</h4>
+
+                <p class="form__text">
+                    заполните поля формы и получите расчет стоимости своего
+                    дома, поля со звездочкой - обязательный для заполнения
+                </p>
+
+                <div class="form__group">
+                    <input
+                        type="text"
+                        class="form__input"
+                        placeholder="Ваше имя*"
+                    />
+                </div>
+                <div class="form__group">
+                    <input
+                        type="email"
+                        class="form__input"
+                        placeholder="Ваш e-mail*"
+                    />
+                    <input
+                        type="tel"
+                        class="form__input"
+                        placeholder="Ваш телефон*"
+                    />
+                </div>
+                <div class="form__group">
+                    <input
+                        type="text"
+                        class="form__input"
+                        placeholder="Что Вас интересует?*"
+                    />
+                </div>
+                <div class="form__group">
+                    <div class="file">
+                        <label for="form-calc-input-file" class="file__label">
+                            <input
+                                id="form-calc-input-file"
+                                type="file"
+                                class="file__input"
+                                placeholder="Прикрепить эскиз"
+                            />
+
+                            <span class="file__field"> Прикрепить эскиз </span>
+                            <span class="btn file__btn"> Выбрать файл </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form__group form__group--submit">
+                    <p class="form__warning">
+                        Нажимая «Рассчитать проект», вы соглашаетесь с
+                        обработкой персональных данных.
+                    </p>
+
+                    <button type="submit" class="btn form__submit">
+                        Рассчитать проект
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+            <!-- header include -->
+            <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <nav class="nav nav--header">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#"> Наши проекты </a>
+                    </li>
+                    <li>
+                        <a href="#"> О компании </a>
+                    </li>
+                    <li>
+                        <a href="#"> Партнеры</a>
+                    </li>
+                    <li>
+                        <a href="#"> Сертификаты </a>
+                    </li>
+                    <li>
+                        <a href="#"> Преимущества </a>
+                    </li>
+                    <li>
+                        <a href="#"> Структура работы </a>
+                    </li>
+                    <li>
+                        <a href="#"> Отзывы </a>
+                    </li>
+                    <li>
+                        <a href="#"> Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="burger">
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+                <span class="burger__item"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="header-bottom">
+    <div class="container">
+        <div class="header-bottom__inner">
+            <a href="index.html" class="logo">
+                <picture>
+                    <source srcset="img/logo/logo.webp" />
+                    <img src="img/logo/logo.png" alt="logo__image" />
+                </picture>
+            </a>
+
+            <div class="tel-block">
+                <button type="button" class="tel-block__item sm">
+                    <span class="tel-block__item-top">
+                        <img src="img/icons/tel.png" alt="" />
+                        Заказать звонок
+                    </span>
+                    <span class="tel-block__item-bottom">
+                        Перевоним через 15 минут
+                    </span>
+                </button>
+                <a href="tel:+79211234567" class="tel-block__item big">
+                    <span class="tel-block__item-top">
+                        <img src="img/icons/tel.png" alt="" />
+                        +7 (921) 123-45-67
+                    </span>
+                    <span class="tel-block__item-bottom">
+                        Ежедневно с 9.00 до 22.00
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <main>
+                <section class="section section--default">
+                    <div class="container">
+                        <div class="section__inner">
+                            <h2 class="section__title">
+                                ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ
+                            </h2>
+
+                            <div class="section__content"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- footer include -->
+            <!-- section contacts -->
+<section class="section section--contacts">
+    <ul class="socials socials--contacts">
+        <li class="socials__item">
+            <a href="#">
+                <img
+                    src="img/icons/whatsapp.png"
+                    alt=""
+                    class="socials__icon"
+                />
+            </a>
+        </li>
+        <li class="socials__item">
+            <a href="#">
+                <img src="img/icons/vk.png" alt="" class="socials__icon" />
+            </a>
+        </li>
+        <li class="socials__item">
+            <a href="#">
+                <img src="img/icons/tg.png" alt="" class="socials__icon" />
+            </a>
+        </li>
+    </ul>
+    <div class="container">
+        <div class="section__inner">
+            <h2 class="section__title">Контакты</h2>
+
+            <div class="section__content">
+                <address class="contacts">
+                    <ul class="socials socials--contacts-static">
+                        <li class="socials__item">
+                            <a href="#">
+                                <img
+                                    src="img/icons/whatsapp.png"
+                                    alt=""
+                                    class="socials__icon"
+                                />
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#">
+                                <img
+                                    src="img/icons/vk.png"
+                                    alt=""
+                                    class="socials__icon"
+                                />
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#">
+                                <img
+                                    src="img/icons/tg.png"
+                                    alt=""
+                                    class="socials__icon"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="contacts__list">
+                        <li>
+                            <img src="img/section/contacts/tel.png" alt="" />
+
+                            <a href="tel:+79211234567"> +7 (921) 123-45-67 </a>
+                        </li>
+                        <li>
+                            <img src="img/section/contacts/mail.png" alt="" />
+
+                            <a href="mailto:office@alstroy.ru">
+                                office@alstroy.ru
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/section/contacts/home.png" alt="" />
+
+                            <p>Санкт-Петербург, ул. Ваш адрес, дом №</p>
+                        </li>
+                    </ul>
+
+                    <button
+                        type="button"
+                        class="btn contacts__btn modal-open-btn"
+                        data-target="modal"
+                    >
+                        Хочу консультацию
+                    </button>
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="map-wrapper">
+        <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A10fe66b213b5c6ec37a72c6f9f399219d5edbeeedeae76320f743c5d7bd8cbfc&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=false"
+        ></script>
+    </div>
+</section>
+<!-- end of section contacts -->
+
+<footer class="footer">
+    <div class="container container--md">
+        <div class="footer__inner">
+            <a href="#" class="logo footer__logo">
+                <img src="img/logo/logo-footer.png" alt="" />
+            </a>
+
+            <div class="footer__content">
+                <p class="footer__copy">
+                    Россия. г. Санкт-Петербург. Копирование и использование
+                    материалов сайта запрещено. Все права защищены © 2010-2023.
+                    Агентство недвижимости “Альянс строй”.
+                </p>
+
+                <div class="footer__docs">
+                    <a href="#"> Пользовательское соглашение </a>
+                    <a href="#"> Политика о конфиденциальности </a>
+                    <a href="#"> Договор оферты </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+            <!-- </div> -->
+        </div>
+    </body>
+</html>

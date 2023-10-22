@@ -1,11 +1,70 @@
 <div class="modal">
     <div class="modal__inner">
         <button class="modal__close">
-            <img src="img/icons/close.svg" alt="закрыть">
+            <img src="img/icons/close.svg" alt="закрыть" />
         </button>
-        <h2 class="modal_title">Modal Title</h2>
         <div class="modal__content">
-            modal content
+            <form class="form form--calc">
+                <h4 class="form__title">РассчитаЙТЕ стоимость СВОЕГО ДОМА:</h4>
+
+                <p class="form__text">
+                    заполните поля формы и получите расчет стоимости своего
+                    дома, поля со звездочкой - обязательный для заполнения
+                </p>
+
+                <div class="form__group">
+                    <input
+                        type="text"
+                        class="form__input"
+                        placeholder="Ваше имя*"
+                    />
+                </div>
+                <div class="form__group">
+                    <input
+                        type="email"
+                        class="form__input"
+                        placeholder="Ваш e-mail*"
+                    />
+                    <input
+                        type="tel"
+                        class="form__input"
+                        placeholder="Ваш телефон*"
+                    />
+                </div>
+                <div class="form__group">
+                    <input
+                        type="text"
+                        class="form__input"
+                        placeholder="Что Вас интересует?*"
+                    />
+                </div>
+                <div class="form__group">
+                    <div class="file">
+                        <label for="form-calc-input-file" class="file__label">
+                            <input
+                                id="form-calc-input-file"
+                                type="file"
+                                class="file__input"
+                                placeholder="Прикрепить эскиз"
+                            />
+
+                            <span class="file__field"> Прикрепить эскиз </span>
+                            <span class="btn file__btn"> Выбрать файл </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form__group form__group--submit">
+                    <p class="form__warning">
+                        Нажимая «Рассчитать проект», вы соглашаетесь с
+                        обработкой персональных данных.
+                    </p>
+
+                    <button type="submit" class="btn form__submit">
+                        Рассчитать проект
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

@@ -66,3 +66,35 @@
         }
     }
 }
+
+.header-bottom {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    &__inner {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        margin-bottom: 88px;
+
+        @media (max-width: $md) {
+            gap: 30px;
+
+            margin-bottom: 30px;
+        }
+        @media (max-width: 400px) {
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            @media (max-width: $sm) {
+                max-width: 100px;
+            }
+        }
+    }
+}
