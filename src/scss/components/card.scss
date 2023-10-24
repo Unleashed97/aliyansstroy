@@ -245,6 +245,10 @@
         box-shadow: -1px 1px 5px rgba($colors-blue, 0.5);
         background-color: #fff;
 
+        @media (max-width: $sm) {
+            padding: 10px;
+        }
+
         .card__video {
             margin-bottom: 10px;
 
