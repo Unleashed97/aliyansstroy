@@ -1641,7 +1641,7 @@ main {
   position: relative;
   padding: 72px 0 40px;
   margin-bottom: 40px;
-  background-image: url("../img/section/about/about-bg.webp");
+  background-image: url("../img/section/about/about-bg-2.webp");
   background-repeat-x: repeat;
   background-repeat-y: no-repeat;
   background-position: center;
@@ -1715,7 +1715,7 @@ main {
 .section--certificates {
   padding: 90px 0 116px;
   margin-bottom: 40px;
-  background-image: url("../img/section/certificates/cert-bg.jpg");
+  background-image: url("../img/section/certificates/cert-bg-2.jpg");
   background-repeat-x: repeat;
   background-repeat-y: no-repeat;
   background-position: center;
@@ -2555,7 +2555,7 @@ main {
 
 .banner-calc {
   padding: 75px 0;
-  background-image: url("../img/section/advantages/form-calc-bg.webp");
+  background-image: url("../img/section/advantages/form-calc-bg-2.jpg");
   background-repeat-x: repeat;
   background-repeat-y: no-repeat;
   background-position: center;
