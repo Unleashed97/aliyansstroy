@@ -55,6 +55,17 @@
 
         border: 0;
         background: none;
+        cursor: pointer;
+
+        svg path {
+            transition: 0.3s linear;
+        }
+
+        &:hover {
+            svg path {
+                fill: #fff;
+            }
+        }
     }
 
     .form .form__title {

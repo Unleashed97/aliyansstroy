@@ -1102,6 +1102,10 @@ ul {
   list-style: none;
 }
 
+dl {
+  margin: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -1137,6 +1141,7 @@ main {
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 0 6px 3px rgba(232, 186, 119, 0.9);
+  outline: none;
   transition: 0.3s linear;
 }
 .btn:hover, .btn.active {
@@ -1192,7 +1197,7 @@ main {
 }
 .header__inner.active .nav--header .nav__list {
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   gap: 10px;
   margin: auto 0;
@@ -1222,12 +1227,15 @@ main {
 .header__tel {
   display: none;
   flex-direction: column;
+  gap: 4px;
+  color: #0f1b50;
 }
 .header__tel span {
   font-weight: 600;
 }
 .header__tel p {
   font-size: 1.2rem;
+  line-height: 0.8;
 }
 @media (max-width: 768px) {
   .header__tel {
@@ -1251,6 +1259,7 @@ main {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  color: #0f1b50;
 }
 @media (max-width: 768px) {
   .header-bottom__inner {
@@ -1280,11 +1289,16 @@ main {
 @media (max-width: 768px) {
   .footer__inner {
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
   }
 }
 .footer__logo {
   margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .footer__logo {
+    margin-bottom: 0;
+  }
 }
 .footer__content {
   padding: 9px;
@@ -1402,6 +1416,7 @@ main {
   border: 0;
   background: none;
   cursor: pointer;
+  outline: none;
 }
 @media (max-width: 768px) {
   .burger {
@@ -1468,6 +1483,13 @@ main {
   padding: 0;
   border: 0;
   background: none;
+  cursor: pointer;
+}
+.modal__close svg path {
+  transition: 0.3s linear;
+}
+.modal__close:hover svg path {
+  fill: #fff;
 }
 .modal .form .form__title {
   color: #fff;
@@ -1577,6 +1599,11 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 1920px) {
+  .section--showcase {
+    margin-bottom: -500px;
+  }
+}
 @media (max-width: 768px) {
   .section--showcase {
     height: 80vh;
@@ -1678,7 +1705,7 @@ main {
   left: 0;
   transform: translateY(-50%);
 }
-@media (max-width: 1400px) {
+@media (max-width: 1700px) {
   .section--about .decor--house {
     display: none;
   }
@@ -1687,13 +1714,10 @@ main {
   margin-bottom: 40px;
 }
 .section--about .section__content {
+  position: relative;
+  z-index: 1;
   max-width: 600px;
-  margin-left: auto;
-}
-@media (max-width: 1400px) {
-  .section--about .section__content {
-    margin: 0 auto;
-  }
+  margin: 0 auto;
 }
 .section--about .section__content p {
   margin-bottom: 35px;
@@ -1721,7 +1745,7 @@ main {
   background-position: center;
   background-size: contain;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .section--certificates {
     background-size: cover;
   }
@@ -1854,17 +1878,32 @@ main {
   }
 }
 .section--default {
+  position: relative;
+  padding-top: 260px;
+  margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+  .section--default {
+    padding-top: 260px;
+  }
+}
+.section--default::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 234px;
   background-image: url("../img/section/default/bg.webp");
   background-repeat-x: repeat;
   background-repeat-y: no-repeat;
   background-position: top;
   background-size: contain;
-  padding-top: 260px;
-  margin-bottom: 100px;
 }
-@media (max-width: 576px) {
-  .section--default {
-    padding-top: 170px;
+@media (max-width: 1400px) {
+  .section--default::after {
+    background-size: cover;
   }
 }
 .section--default figure {
@@ -1898,9 +1937,10 @@ main {
 }
 .section--team {
   margin-bottom: 0;
+  padding: 152px 0 190px;
 }
 .section--team .section__title {
-  margin-bottom: 53px;
+  margin-bottom: 45px;
 }
 .section--team .section__subtitle {
   margin-bottom: 28px;
@@ -2032,8 +2072,8 @@ main {
   max-width: 956px;
   width: 100%;
   height: 191px;
-  padding: 30px 30px 30px 146px;
-  margin-left: -146px;
+  padding: 30px 30px 30px 137px;
+  margin-left: -137px;
   background-image: url("../img/section/showcase/form-cover.webp");
   background-repeat: no-repeat;
   background-size: contain;
@@ -2087,8 +2127,13 @@ main {
 }
 .form--showcase .form__submit {
   width: 100%;
+  max-width: 230px;
   height: 46px;
-  max-width: 244px;
+}
+@media (max-width: 768px) {
+  .form--showcase .form__submit {
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 576px) {
   .form--showcase .form__submit {
@@ -2374,6 +2419,7 @@ main {
   height: 60px;
   font-family: "Intro Bold", sans-serif;
   font-size: 4.1rem;
+  line-height: 1;
   color: #0f1b50;
   border-radius: 50%;
   background-color: #ac7f42;
@@ -2383,6 +2429,7 @@ main {
     width: 30px;
     height: 30px;
     font-size: 2rem;
+    line-height: 1;
   }
 }
 .card--structure .card__title {
@@ -2502,6 +2549,7 @@ main {
 .slider-container .swiper-button-prev,
 .slider-container .swiper-button-next {
   z-index: 1;
+  outline: none;
 }
 .slider-container .swiper-button-prev svg path,
 .slider-container .swiper-button-next svg path {
@@ -2540,7 +2588,7 @@ main {
 }
 
 .swiper-pagination {
-  bottom: 30px !important;
+  bottom: 25px !important;
 }
 .swiper-pagination .swiper-pagination-bullet {
   border-radius: 0;
@@ -2705,7 +2753,7 @@ main {
 .house-stats-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .house-stats-list li {
   display: flex;
@@ -2729,7 +2777,7 @@ main {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   margin-bottom: 20px;
 }
 @media (max-width: 576px) {
@@ -2778,8 +2826,9 @@ main {
   fill: #ac7f42 !important;
   transition: 0.3s linear !important;
 }
-.fslightbox-toolbar-button svg path:hover {
-  fill: #0f1b50 !important;
+.fslightbox-toolbar-button:hover svg path {
+  fill: #fff !important;
+  stroke: #fff !important;
 }
 
 .fslightbox-slide-btn {
@@ -2787,7 +2836,7 @@ main {
   background: none !important;
 }
 .fslightbox-slide-btn:hover svg path {
-  stroke: #0f1b50 !important;
+  stroke: #fff !important;
 }
 
 .fslightbox-toolbar {

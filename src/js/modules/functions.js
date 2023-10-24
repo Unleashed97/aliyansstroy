@@ -44,8 +44,7 @@ export const handleModal = () => {
                     body.style.position = 'fixed'
                     body.style.top = `-${scrollY}`
 
-                    const modalCloseBtn =
-                        modal.querySelector('.modal__btn-close')
+                    const modalCloseBtn = modal.querySelector('.modal__close')
 
                     if (modalCloseBtn) {
                         modalCloseBtn.addEventListener('click', () => {

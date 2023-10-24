@@ -28,9 +28,11 @@
     svg path {
         fill: $colors-beige !important;
         transition: 0.3s linear !important;
-
-        &:hover {
-            fill: $colors-blue !important;
+    }
+    &:hover {
+        svg path {
+            fill: #fff !important;
+            stroke: #fff !important;
         }
     }
 }
@@ -40,7 +42,7 @@
     background: none !important;
 
     &:hover svg path {
-        stroke: $colors-blue !important;
+        stroke: #fff !important;
     }
 }
 

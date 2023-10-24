@@ -13,6 +13,8 @@
     background: none;
     cursor: pointer;
 
+    outline: none;
+
     @media (max-width: $md) {
         display: block;
     }
