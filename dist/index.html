@@ -2,15 +2,17 @@
 <html lang="ru">
     <!-- head include -->
     <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
 
     <script defer src="js/vendor/swiper-bundle.min.js"></script>
+    <script defer src="js/vendor/fslightbox.js"></script>
     <script defer src="js/script.min.js"></script>
     <title>Главная</title>
 </head>
+
 
     <body>
         <div class="wrapper">
@@ -92,6 +94,21 @@
             <header class="header">
     <div class="container">
         <div class="header__inner">
+            <a href="index.html" class="logo header__logo">
+                <picture>
+                    <source srcset="img/logo/logo.webp" />
+                    <img src="img/logo/logo.png" alt="logo__image" />
+                </picture>
+            </a>
+
+            <a href="tel:+79211234567" class="header__tel">
+                <div>
+                    <img src="img/icons/tel-mob-active.png" alt="" />
+                    <span>+7 (921) 123-45-67 </span>
+                </div>
+                <p>Ежедневно с 9.00 до 22.00</p>
+            </a>
+
             <nav class="nav nav--header">
                 <ul class="nav__list">
                     <li>
@@ -125,6 +142,7 @@
                 <span class="burger__item"></span>
                 <span class="burger__item"></span>
                 <span class="burger__item"></span>
+                <span class="burger__item"></span>
             </button>
         </div>
     </div>
@@ -141,18 +159,18 @@
             </a>
 
             <div class="tel-block">
-                <button type="button" class="tel-block__item sm">
+                <button type="button" class="tel-block__item callback">
                     <span class="tel-block__item-top">
-                        <img src="img/icons/tel.png" alt="" />
+                        <span class="tel-block__item-icon"></span>
                         Заказать звонок
                     </span>
                     <span class="tel-block__item-bottom">
                         Перевоним через 15 минут
                     </span>
                 </button>
-                <a href="tel:+79211234567" class="tel-block__item big">
+                <a href="tel:+79211234567" class="tel-block__item call">
                     <span class="tel-block__item-top">
-                        <img src="img/icons/tel.png" alt="" />
+                        <span class="tel-block__item-icon"></span>
                         +7 (921) 123-45-67
                     </span>
                     <span class="tel-block__item-bottom">
@@ -167,38 +185,25 @@
 
             <!-- main -->
             <main>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="#" class="socials__link whatsapp"> </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link vk"> </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#" class="socials__link tg"> </a>
+                    </li>
+                </ul>
                 <!-- section -->
                 <section class="section section--showcase">
-                    <ul class="socials socials--showcase">
-                        <li class="socials__item">
-                            <a href="#">
-                                <img
-                                    src="img/icons/whatsapp.png"
-                                    alt=""
-                                    class="socials__icon"
-                                />
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#">
-                                <img
-                                    src="img/icons/vk.png"
-                                    alt=""
-                                    class="socials__icon"
-                                />
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#">
-                                <img
-                                    src="img/icons/tg.png"
-                                    alt=""
-                                    class="socials__icon"
-                                />
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="container"></div>
+                </section>
+                <!-- end of section showcase -->
 
+                <!-- section offer -->
+                <section class="section section--offer">
                     <div class="container">
                         <div class="section__inner">
                             <h2 class="section__title">
@@ -290,9 +295,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="section__form-wrapper"></div> -->
                 </section>
-                <!-- end of section -->
+                <!-- end of section offer -->
 
                 <!-- section projects -->
                 <section class="section section--projects">
@@ -321,11 +325,105 @@
                                                 <article
                                                     class="card card--project"
                                                 >
-                                                    <img
-                                                        src="img/section/projects/project-image.jpg"
-                                                        alt=""
-                                                        class="card__image"
-                                                    />
+                                                    <div
+                                                        class="slider-container slider-container--project"
+                                                    >
+                                                        <div
+                                                            class="swiper swiper--project-border"
+                                                        >
+                                                            <div
+                                                                class="swiper-wrapper"
+                                                            >
+                                                                <div
+                                                                    class="swiper-slide"
+                                                                >
+                                                                    <a
+                                                                        data-fslightbox="project-gallery"
+                                                                        href="img/project/project-image.jpg"
+                                                                    >
+                                                                        <img
+                                                                            src="img/project/project-image.jpg"
+                                                                            alt=""
+                                                                            class="project__image"
+                                                                        />
+                                                                    </a>
+                                                                </div>
+                                                                <div
+                                                                    class="swiper-slide"
+                                                                >
+                                                                    <a
+                                                                        data-fslightbox="project-gallery"
+                                                                        href="img/project/project-image.jpg"
+                                                                    >
+                                                                        <img
+                                                                            src="img/project/project-image.jpg"
+                                                                            alt=""
+                                                                            class="project__image"
+                                                                        />
+                                                                    </a>
+                                                                </div>
+                                                                <div
+                                                                    class="swiper-slide"
+                                                                >
+                                                                    <a
+                                                                        data-fslightbox="project-gallery"
+                                                                        href="img/project/project-image.jpg"
+                                                                    >
+                                                                        <img
+                                                                            src="img/project/project-image.jpg"
+                                                                            alt=""
+                                                                            class="project__image"
+                                                                        />
+                                                                    </a>
+                                                                </div>
+                                                                <div
+                                                                    class="swiper-slide"
+                                                                >
+                                                                    <a
+                                                                        data-fslightbox="project-gallery"
+                                                                        href="img/project/project-image.jpg"
+                                                                    >
+                                                                        <img
+                                                                            src="img/project/project-image.jpg"
+                                                                            alt=""
+                                                                            class="project__image"
+                                                                        />
+                                                                    </a>
+                                                                </div>
+                                                                <div
+                                                                    class="swiper-slide"
+                                                                >
+                                                                    <a
+                                                                        data-fslightbox="project-gallery"
+                                                                        href="img/project/project-image.jpg"
+                                                                    >
+                                                                        <img
+                                                                            src="img/project/project-image.jpg"
+                                                                            alt=""
+                                                                            class="project__image"
+                                                                        />
+                                                                    </a>
+                                                                </div>
+                                                                <div
+                                                                    class="swiper-slide"
+                                                                >
+                                                                    <a
+                                                                        data-fslightbox="project-gallery"
+                                                                        href="img/project/project-image.jpg"
+                                                                    >
+                                                                        <img
+                                                                            src="img/project/project-image.jpg"
+                                                                            alt=""
+                                                                            class="project__image"
+                                                                        />
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="swiper-pagination"
+                                                            ></div>
+                                                        </div>
+                                                    </div>
 
                                                     <div class="card__content">
                                                         <h4 class="card__title">
@@ -592,7 +690,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="swiper-button-prev .swiper-button-prev--projects"
+                                        class="swiper-button-prev swiper-button-prev--projects"
                                     >
                                         <svg
                                             width="30"
@@ -614,7 +712,7 @@
                                         </svg>
                                     </div>
                                     <div
-                                        class="swiper-button-next .swiper-button-next--projects"
+                                        class="swiper-button-next swiper-button-next--projects"
                                     >
                                         <svg
                                             width="30"
@@ -788,7 +886,7 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="swiper-button-prev .swiper-button-prev--partners-build"
+                                    class="swiper-button-prev swiper-button-prev--partners-build"
                                 >
                                     <svg
                                         width="30"
@@ -810,7 +908,7 @@
                                     </svg>
                                 </div>
                                 <div
-                                    class="swiper-button-next .swiper-button-next--partners-build"
+                                    class="swiper-button-next swiper-button-next--partners-build"
                                 >
                                     <svg
                                         width="30"
@@ -840,7 +938,7 @@
                             <div
                                 class="slider-container slider-container--partners-bank"
                             >
-                                <div class="swiper swiper--partners-build">
+                                <div class="swiper swiper--partners-bank">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="card card--partners">
@@ -913,7 +1011,7 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="swiper-button-prev .swiper-button-prev--partners-bank"
+                                    class="swiper-button-prev swiper-button-prev--partners-bank"
                                 >
                                     <svg
                                         width="30"
@@ -935,7 +1033,7 @@
                                     </svg>
                                 </div>
                                 <div
-                                    class="swiper-button-next .swiper-button-next--partners-bank"
+                                    class="swiper-button-next swiper-button-next--partners-bank"
                                 >
                                     <svg
                                         width="30"
@@ -979,11 +1077,16 @@
                                                     <div
                                                         class="card__image-wrapper"
                                                     >
-                                                        <img
-                                                            src="img/section/certificates/cert1.jpg"
-                                                            alt=""
-                                                            class="card__image"
-                                                        />
+                                                        <a
+                                                            data-fslightbox
+                                                            href="img/section/certificates/cert1.jpg"
+                                                        >
+                                                            <img
+                                                                src="img/section/certificates/cert1.jpg"
+                                                                alt=""
+                                                                class="card__image"
+                                                            />
+                                                        </a>
                                                     </div>
 
                                                     <p class="card__text">
@@ -999,11 +1102,16 @@
                                                     <div
                                                         class="card__image-wrapper"
                                                     >
-                                                        <img
-                                                            src="img/section/certificates/cert2.jpg"
-                                                            alt=""
-                                                            class="card__image"
-                                                        />
+                                                        <a
+                                                            data-fslightbox
+                                                            href="img/section/certificates/cert2.jpg"
+                                                        >
+                                                            <img
+                                                                src="img/section/certificates/cert2.jpg"
+                                                                alt=""
+                                                                class="card__image"
+                                                            />
+                                                        </a>
                                                     </div>
 
                                                     <p class="card__text">
@@ -1019,11 +1127,16 @@
                                                     <div
                                                         class="card__image-wrapper"
                                                     >
-                                                        <img
-                                                            src="img/section/certificates/cert3.jpg"
-                                                            alt=""
-                                                            class="card__image"
-                                                        />
+                                                        <a
+                                                            data-fslightbox
+                                                            href="img/section/certificates/cert3.jpg"
+                                                        >
+                                                            <img
+                                                                src="img/section/certificates/cert3.jpg"
+                                                                alt=""
+                                                                class="card__image"
+                                                            />
+                                                        </a>
                                                     </div>
 
                                                     <p class="card__text">
@@ -1037,7 +1150,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="swiper-button-prev .swiper-button-prev--cert"
+                                        class="swiper-button-prev swiper-button-prev--cert"
                                     >
                                         <svg
                                             width="30"
@@ -1059,7 +1172,7 @@
                                         </svg>
                                     </div>
                                     <div
-                                        class="swiper-button-next .swiper-button-next--cert"
+                                        class="swiper-button-next swiper-button-next--cert"
                                     >
                                         <svg
                                             width="30"
@@ -1379,6 +1492,8 @@
                                     </p>
                                 </div>
                             </div>
+
+                            <a href="#" class="btn section__btn">Подробнее</a>
                         </div>
                     </div>
                 </section>
@@ -1477,7 +1592,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="swiper-button-prev .swiper-button-prev--testimonials"
+                                        class="swiper-button-prev swiper-button-prev--testimonials"
                                     >
                                         <svg
                                             width="30"
@@ -1499,7 +1614,7 @@
                                         </svg>
                                     </div>
                                     <div
-                                        class="swiper-button-next .swiper-button-next--testimonials"
+                                        class="swiper-button-next swiper-button-next--testimonials"
                                     >
                                         <svg
                                             width="30"
@@ -1530,62 +1645,12 @@
             <!-- footer include -->
             <!-- section contacts -->
 <section class="section section--contacts">
-    <ul class="socials socials--contacts">
-        <li class="socials__item">
-            <a href="#">
-                <img
-                    src="img/icons/whatsapp.png"
-                    alt=""
-                    class="socials__icon"
-                />
-            </a>
-        </li>
-        <li class="socials__item">
-            <a href="#">
-                <img src="img/icons/vk.png" alt="" class="socials__icon" />
-            </a>
-        </li>
-        <li class="socials__item">
-            <a href="#">
-                <img src="img/icons/tg.png" alt="" class="socials__icon" />
-            </a>
-        </li>
-    </ul>
     <div class="container">
         <div class="section__inner">
             <h2 class="section__title">Контакты</h2>
 
             <div class="section__content">
                 <address class="contacts">
-                    <ul class="socials socials--contacts-static">
-                        <li class="socials__item">
-                            <a href="#">
-                                <img
-                                    src="img/icons/whatsapp.png"
-                                    alt=""
-                                    class="socials__icon"
-                                />
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#">
-                                <img
-                                    src="img/icons/vk.png"
-                                    alt=""
-                                    class="socials__icon"
-                                />
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="#">
-                                <img
-                                    src="img/icons/tg.png"
-                                    alt=""
-                                    class="socials__icon"
-                                />
-                            </a>
-                        </li>
-                    </ul>
                     <ul class="contacts__list">
                         <li>
                             <img src="img/section/contacts/tel.png" alt="" />
@@ -1645,10 +1710,16 @@
                 <div class="footer__docs">
                     <a href="#"> Пользовательское соглашение </a>
                     <a href="#"> Политика о конфиденциальности </a>
-                    <a href="#"> Договор оферты </a>
+                    <a href="#"> Отзывы и сертификаты </a>
                 </div>
             </div>
         </div>
+
+        <p class="footer__designedby">
+            Сайт разработан <br />
+            студией дизайна
+            <a href="https://bigartis.ru/"> BIGARTIS </a>
+        </p>
     </div>
 </footer>
 

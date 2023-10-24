@@ -49,6 +49,10 @@ p {
     margin: 0;
 }
 
+main {
+    position: relative;
+}
+
 // components
 @import 'components/btn.scss';
 @import 'components/header.scss';
@@ -68,3 +72,5 @@ p {
 @import 'components/banner-calc.scss';
 @import 'components/contacts.scss';
 @import 'components/socials.scss';
+@import 'components/project.scss';
+@import 'components/fslightbox.scss';

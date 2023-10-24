@@ -1,4 +1,9 @@
 .socials {
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 5;
+
     padding: 13px 12px;
 
     width: fit-content;
@@ -6,59 +11,44 @@
     flex-direction: column;
     gap: 24px;
 
-    box-shadow: -1px 1px 5px rgba($colors-blue, 0.5);
-    background-color: #fff;
-    border-radius: 9px 0 0 9px;
+    background-image: url('../img/icons/socials-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    li {
+    &__link {
+        width: 30px;
+        height: 25px;
+
         display: flex;
         align-items: center;
         justify-content: center;
-    }
 
-    li a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
 
-    &--showcase {
-        position: absolute;
-        right: 0;
-        top: 40%;
+        transition: 0.3s linear;
 
-        transform: translateY(-50%);
+        &.whatsapp {
+            background-image: url('../img/icons/whatsapp.png');
 
-        @media (max-width: 380px) {
-            display: none;
+            &:hover {
+                background-image: url('../img/icons/whatsapp-active.png');
+            }
         }
-    }
+        &.vk {
+            background-image: url('../img/icons/vk.png');
 
-    &--contacts {
-        position: absolute;
-        right: 0;
-        top: 50%;
-
-        transform: translateY(-50%);
-
-        @media (max-width: $xl) {
-            display: none;
+            &:hover {
+                background-image: url('../img/icons/vk-active.png');
+            }
         }
-    }
-    &--contacts-static {
-        display: none;
-        flex-direction: row;
+        &.tg {
+            background-image: url('../img/icons/tg.png');
 
-        margin-bottom: 20px;
-
-        border-radius: 9px;
-
-        a {
-            display: block;
-        }
-
-        @media (max-width: $xl) {
-            display: flex;
+            &:hover {
+                background-image: url('../img/icons/tg-active.png');
+            }
         }
     }
 }

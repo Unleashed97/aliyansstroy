@@ -1,0 +1,123 @@
+.project {
+    display: grid;
+    grid-template-columns: 50% 45%;
+    gap: 45px;
+
+    margin-bottom: 40px;
+
+    @media (max-width: $md) {
+        grid-template-columns: 100%;
+    }
+
+    &__info {
+    }
+
+    &__image-wrapper {
+        padding: 18px;
+        border-radius: 19px;
+        box-shadow: -1px 1px 5px rgba($colors-blue, 0.5);
+        background-color: #fff;
+
+        @media (max-width: $sm) {
+            padding: 8px;
+        }
+    }
+
+    &__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.general-stats {
+    margin-bottom: 22px;
+
+    div {
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+
+        margin-bottom: 10px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    dt {
+        font-size: 1.4rem;
+    }
+
+    dd {
+        margin: 0;
+
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 0.9;
+        color: $colors-blue;
+    }
+}
+
+.house-stats-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-bottom: 40px;
+
+    @media (max-width: $sm) {
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        color: $colors-blue;
+
+        .num {
+            font-size: 2.4rem;
+            font-weight: 700;
+
+            @media (max-width: $sm) {
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+
+.card__price-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    @media (max-width: $sm) {
+        flex-direction: column;
+    }
+
+    div {
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+    }
+    dd {
+        margin: 0;
+
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1;
+        color: $colors-blue;
+    }
+}
+
+.card__btn {
+    width: 100%;
+    max-width: 223px;
+
+    margin: 0 auto;
+}

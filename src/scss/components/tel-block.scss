@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: end;
 
+    @media (max-width: $md) {
+        justify-content: flex-start;
+    }
+
     &__item {
         height: 55px;
 
@@ -26,7 +30,7 @@
             color: $colors-blue;
         }
 
-        &.sm {
+        &.callback {
             // width: 100%;
             // max-width: 240px;
 
@@ -38,14 +42,20 @@
             background-size: cover;
 
             @media (max-width: $md) {
-                display: none;
+                position: static;
             }
 
-            @media (max-width: 400px) {
-                background-image: none;
+            &:hover {
+                .tel-block__item-icon {
+                    background-image: url('../img/icons/tel-active.png');
+                }
+            }
+
+            .tel-block__item-icon {
+                background-image: url('../img/icons/tel.png');
             }
         }
-        &.big {
+        &.call {
             max-width: 240px;
             width: 100%;
             align-items: flex-start;
@@ -55,22 +65,44 @@
             background-image: url('../img/section/showcase/tel-cover-sm.webp');
             background-size: cover;
 
-            @media (max-width: 400px) {
-                background-image: none;
+            @media (max-width: $md) {
+                display: none;
 
-                padding: 0;
-                height: auto;
-                width: fit-content;
+                padding-left: 0;
+            }
+
+            &:hover {
+                .tel-block__item-icon {
+                    background-image: url('../img/icons/tel-mob-active.png');
+                }
+            }
+
+            .tel-block__item-icon {
+                background-image: url('../img/icons/tel-mob.png');
             }
         }
     }
 
     &__item-top {
+        display: flex;
+        gap: 5px;
         font-size: 1.5rem;
         font-weight: 600;
     }
 
     &__item-bottom {
         font-size: 1.2rem;
+    }
+
+    &__item-icon {
+        display: block;
+        width: 20px;
+        height: 15px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        transition: 0.3s linear;
     }
 }

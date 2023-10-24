@@ -30,95 +30,6 @@
             text-transform: uppercase;
             color: $colors-blue;
         }
-
-        .general-stats {
-            margin-bottom: 22px;
-
-            div {
-                display: flex;
-                align-items: flex-end;
-                gap: 5px;
-
-                margin-bottom: 10px;
-
-                &:last-of-type {
-                    margin-bottom: 0;
-                }
-            }
-
-            dt {
-                font-size: 1.4rem;
-            }
-
-            dd {
-                margin: 0;
-
-                font-size: 2.4rem;
-                font-weight: 700;
-                line-height: 0.9;
-                color: $colors-blue;
-            }
-        }
-
-        .house-stats-list {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-
-            margin-bottom: 40px;
-
-            @media (max-width: $sm) {
-                grid-template-columns: repeat(2, auto);
-                gap: 30px;
-            }
-
-            li {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 5px;
-
-                color: $colors-blue;
-
-                .num {
-                    font-size: 2.4rem;
-                    font-weight: 700;
-                }
-            }
-        }
-
-        .card__price-block {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px;
-
-            margin-bottom: 20px;
-
-            @media (max-width: $sm) {
-                flex-direction: column;
-            }
-
-            div {
-                display: flex;
-                align-items: flex-end;
-                gap: 5px;
-            }
-            dd {
-                margin: 0;
-
-                font-size: 1.8rem;
-                font-weight: 700;
-                line-height: 1;
-                color: $colors-blue;
-            }
-        }
-
-        .card__btn {
-            width: 100%;
-            max-width: 223px;
-
-            margin: 0 auto;
-        }
     }
 
     &--partners {
@@ -180,9 +91,8 @@
     }
 
     &--advantage {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        place-items: center;
 
         .card__image {
             margin-bottom: 20px;
@@ -198,14 +108,28 @@
             font-size: 1.8rem;
             font-weight: 600;
             line-height: 2.2rem;
+            text-transform: uppercase;
             color: $colors-blue;
             text-align: center;
+
+            @media (max-width: 640px) {
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+            }
+            @media (max-width: $sm) {
+                font-size: 1.2rem;
+            }
         }
 
         .card__text {
             line-height: 1.8rem;
 
             text-align: center;
+
+            @media (max-width: $sm) {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+            }
         }
     }
 
@@ -234,6 +158,13 @@
 
             border-radius: 50%;
             background-color: $colors-beige;
+
+            @media (max-width: 640px) {
+                width: 30px;
+                height: 30px;
+
+                font-size: 2rem;
+            }
         }
 
         .card__title {
@@ -241,6 +172,19 @@
             font-weight: 600;
             line-height: 2.2rem;
             color: $colors-blue;
+
+            @media (max-width: 640px) {
+                font-size: 1.6rem;
+            }
+            @media (max-width: $sm) {
+                font-size: 1.3rem;
+            }
+        }
+
+        .card__image {
+            @media (max-width: 640px) {
+                max-width: 60px;
+            }
         }
     }
 
@@ -270,6 +214,64 @@
             font-size: 1.6rem;
 
             border-top: 1px solid;
+        }
+    }
+
+    &--team {
+        .card__caption {
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+
+            font-size: 1.6rem;
+            font-weight: 600;
+
+            border-bottom: 1px solid $colors-grey;
+        }
+
+        .card__text {
+            min-height: 50px;
+
+            line-height: 2.4rem;
+            text-align: left;
+        }
+    }
+
+    &--video {
+        padding: 27px 24px 18px;
+
+        border-radius: 19px;
+        box-shadow: -1px 1px 5px rgba($colors-blue, 0.5);
+        background-color: #fff;
+
+        .card__video {
+            margin-bottom: 10px;
+
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card__caption {
+            position: relative;
+
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+
+            font-size: 1.6rem;
+            font-weight: 600;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                width: 100%;
+                max-width: 267px;
+                height: 1px;
+
+                background-color: $colors-grey;
+            }
         }
     }
 }

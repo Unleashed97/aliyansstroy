@@ -1,0 +1,54 @@
+.fslightbox-container {
+    top: 50% !important;
+    left: 50% !important;
+
+    transform: translate(-50%, -50%) !important;
+
+    max-width: 1156px;
+    width: 100%;
+    max-height: 723px;
+    height: 100%;
+
+    background: rgba($colors-blue, 0.9) !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fslightbox-full-dimension {
+}
+
+.fslightbox-flex-centered div {
+}
+.fslightbox-toolbar .fslightbox-toolbar-button:first-of-type {
+    display: none;
+}
+.fslightbox-toolbar-button {
+    svg path {
+        fill: $colors-beige !important;
+        transition: 0.3s linear !important;
+
+        &:hover {
+            fill: $colors-blue !important;
+        }
+    }
+}
+.fslightbox-slide-btn {
+    padding: 0 !important;
+
+    background: none !important;
+
+    &:hover svg path {
+        stroke: $colors-blue !important;
+    }
+}
+
+.fslightbox-toolbar {
+    background: none !important;
+}
+
+.fslightbox-svg-path {
+    fill: none !important;
+    stroke: $colors-beige !important;
+}

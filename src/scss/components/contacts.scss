@@ -23,13 +23,13 @@
         margin-bottom: 53px;
     }
 
-    .contacts__list ul li {
+    .contacts__list li {
         display: flex;
         align-items: center;
-        gap: 25px;
+        gap: 30px;
     }
 
-    .contacts__list ul li a {
+    .contacts__list li a {
         color: $colors-grey;
         font-weight: 400;
 

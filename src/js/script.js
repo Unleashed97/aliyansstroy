@@ -12,7 +12,7 @@ const swiperProjects = new Swiper('.swiper--projects', {
 
     breakpoints: {
         0: {
-            slidesPerView: 1.2,
+            slidesPerView: 1,
             spaceBetween: 20,
         },
 
@@ -37,7 +37,7 @@ const swiperPartnersBuild = new Swiper('.swiper--partners-build', {
 
     breakpoints: {
         0: {
-            slidesPerView: 2.2,
+            slidesPerView: 2,
             spaceBetween: 20,
         },
 
@@ -62,7 +62,7 @@ const swiperPartnersBank = new Swiper('.swiper--partners-bank', {
 
     breakpoints: {
         0: {
-            slidesPerView: 2.2,
+            slidesPerView: 2,
             spaceBetween: 20,
         },
 
@@ -87,7 +87,7 @@ const swiperCert = new Swiper('.swiper--cert', {
 
     breakpoints: {
         0: {
-            slidesPerView: 1.2,
+            slidesPerView: 1,
             spaceBetween: 20,
         },
 
@@ -112,7 +112,7 @@ const swipertestimonials = new Swiper('.swiper--testimonials', {
 
     breakpoints: {
         0: {
-            slidesPerView: 1.2,
+            slidesPerView: 1,
             spaceBetween: 20,
         },
 
@@ -129,5 +129,39 @@ const swipertestimonials = new Swiper('.swiper--testimonials', {
     navigation: {
         nextEl: '.swiper-button-next--testimonials',
         prevEl: '.swiper-button-prev--testimonials',
+    },
+})
+const swiperProject = new Swiper('.swiper--project', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 40,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+})
+const swiperProjectBorder = new Swiper('.swiper--project-border', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 40,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+})
+
+const swiperProjectVideo = new Swiper('.swiper--project-video', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 40,
+
+    navigation: {
+        nextEl: '.swiper-button-next--project-video',
+        prevEl: '.swiper-button-prev--project-video',
     },
 })
