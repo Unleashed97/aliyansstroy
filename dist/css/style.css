@@ -1616,6 +1616,11 @@ main {
     background-position: right -200px center;
   }
 }
+@media (max-width: 380px) {
+  .section--showcase {
+    background-position: right -100px center;
+  }
+}
 .section--offer {
   position: relative;
   z-index: 1;

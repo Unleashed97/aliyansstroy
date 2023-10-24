@@ -60,6 +60,9 @@
         @media (max-width: $sm) {
             background-position: right -200px center;
         }
+        @media (max-width: 380px) {
+            background-position: right -100px center;
+        }
     }
 
     &--offer {
